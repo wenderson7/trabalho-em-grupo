@@ -1,0 +1,155 @@
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.home_cabeçalho{
+    background-color: #e6d3b3;
+    border: 2px solid #7a5230;
+}
+
+.home_container{
+    height: 100px;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+/* .container_home{
+    width: 500px;
+} */
+
+.home_container img{
+    height: auto;
+    width: 100px;
+}
+
+.nav_cabeçalho{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.nav_cabeçalho a{
+    color: #3e2a1f;
+    font-size:16px ;
+    text-decoration: none;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e6d3b3;
+    gap: 10px;
+    margin-top: 19px;
+}
+.container button{
+    font-size: 20px;
+    width: 550px;
+    height: 33px;
+} 
+.subtitulo{
+    font-size: 25px;
+}
+
+h1{
+    font-size: 90px;
+}
+.texto{
+    font-size: 25px;
+}
+
+.linha{
+    font-size: 20px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+}
+.signup-form {
+    background-color: #e6d3b3;
+    display: flex;
+    align-items:center ;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group {
+    font-size: 17px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.linha1{
+    display: flex;
+    flex-direction: column;
+}
+.linha1 input{
+    width: 550px;
+    height: 33px;
+}
+.container_login{
+    font-size: 20px;
+}
+
+.linha3 input{
+    width: 525px;
+    height: 33px;
+}
+
+.linha3 button{
+    height: 33px;
+}
+
+.linha2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button1{
+    width: 550px;
+    height: 38px;
+    margin-bottom: 20px;
+}
+footer{
+    background-color: #e6d3b3;
+    border: 2px solid #7a5230;
+}
+
+.footer_container{
+    height: 100px;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.footer_container img{
+    height: auto;
+    width: 100px;
+}
+.nav_footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+/* .footer_container span,
+.nav_footer a{
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+} */
+
+.nav_footer a{
+    color: #3e2a1f;
+    font-size:16px ;
+    text-decoration: none;
+    font-family: 'Inter', system-ui, sans-serif;
+}
