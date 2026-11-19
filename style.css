@@ -128,7 +128,7 @@ h1.titulo {
 /* Campo de senha + botão do olho alinhados perfeitamente */
 .linha3 {
     display: flex;
-    width: 100%;
+    width: 102%;
 }
 
 .linha3 input {
@@ -269,7 +269,7 @@ footer {
     .btn-google,
     .button1 {
         font-size: 16px;
-        height: 44px; /* Altura maior facilita o toque com o dedo */
+        height: 44px; /* Altura do button */
     }
 
     /* Caso use o footer no futuro, ele também já fica responsivo */
