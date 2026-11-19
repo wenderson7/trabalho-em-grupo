@@ -1,202 +1,287 @@
-    *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-.home_cabeçalho{
+body {
     background-color: #e6d3b3;
-    border: 2px solid #7a5230;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #3e2a1f;
 }
 
-.home_container{
+/* --- CABEÇALHO --- */
+.home_cabecalho {
+    background-color: #e6d3b3;
+    border-bottom: 2px solid #7a5230;
+}
+
+.home_container {
     height: 100px;
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-/* .container_home{
-    width: 500px;
-} */
-
-.home_container img{
+.home_container img {
     height: auto;
     width: 100px;
 }
 
-.nav_cabeçalho{
+.nav_cabecalho {
     display: flex;
     justify-content: space-between;
     gap: 40px;
 }
 
-.nav_cabeçalho a{
+.nav_cabecalho a {
     color: #3e2a1f;
-    font-size:16px ;
+    font-size: 16px;
     text-decoration: none;
-    font-family: 'Inter', system-ui, sans-serif;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #e6d3b3;
-    gap: 24px;
-    margin-top: 19px;
-}
-.container button{
-    font-size: 20px;
-    width: 550px;
-    height: 33px;
-} 
-.subtitulo{
-    font-size: 25px;
+.nav_cabecalho a:hover {
+    text-decoration: underline;
 }
 
-h1{
-    font-size: 90px;
-}
-.texto{
-    font-size: 25px;
-}
-
-.linha{
-    font-size: 25px;
-}
-.login{
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    background-color: #e6d3b3;
-}
+/* --- FORMULÁRIO E SEÇÃO SUPERIOR --- */
 .signup-form {
     background-color: #e6d3b3;
     display: flex;
-    align-items:center ;
     flex-direction: column;
+    align-items: center;
     gap: 15px;
+    padding: 20px;
 }
 
-.input-group {
-    font-size: 17px;
-    color: #000000;
-    margin-bottom: 40px;
-}
-
-.linha1{
+.container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    margin-top: 19px;
+    width: 100%;
+    max-width: 550px;
 }
-.linha1 input{
-    width: 550px;
-    height: 33px;
+
+.container hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #7a5230;
 }
-.container_login{
+
+.subtitulo {
     font-size: 20px;
 }
 
-.linha3 input{
-    width: 525px;
-    height: 33px;
+h1.titulo {
+    font-size: 64px; /* Reduzido de 90px para não quebrar o layout */
+    line-height: 1.1;
 }
 
-.linha3 button{
-    height: 33px;
+.texto {
+    font-size: 20px;
 }
 
-.linha2{
+.btn-google {
+    font-size: 18px;
+    width: 100%;
+    max-width: 550px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #7a5230;
+    border-radius: 4px;
+    color: #3e2a1f;
+}
+
+.linha {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+/* --- CAMPOS DE LOGIN --- */
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 550px;
+}
+
+.input-group {
+    font-size: 15px;
+    font-weight: 600;
+    color: #3e2a1f;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.linha1 input {
+    width: 95%;
+    height: 38px;
+    padding: 0 10px;
+    border: 1px solid #7a5230;
+    border-radius: 4px;
+}
+
+/* Campo de senha + botão do olho alinhados perfeitamente */
+.linha3 {
+    display: flex;
+    width: 100%;
+}
+
+.linha3 input {
+    flex: 1; /* Ocupa todo o espaço restante ao lado do botão */
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid #7a5230;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.linha3 button {
+    width: 42px;
+    height: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.button1{
-    width: 550px;
-    height: 38px;
-    margin-bottom: 20px;
-}
-footer{
-    background-color: #e6d3b3;
-    border: 2px solid #7a5230;
+    background-color: #fff;
+    border: 1px solid #7a5230;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
 }
 
-.footer_container{
+/* --- BOTÃO DE ENVIO --- */
+.linha2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.button1 {
+    width: 100%;
+    height: 42px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #7a5230;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.button1:hover {
+    background-color: #5c3d23;
+}
+
+/* --- RODAPÉ (MANTIDO CASO USE EM OUTRA PARTE) --- */
+footer {
+    background-color: #e6d3b3;
+    border-top: 2px solid #7a5230;
+}
+
+.footer_container {
     height: 100px;
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-.footer_container img{
+
+.footer_container img {
     height: auto;
     width: 100px;
 }
-.nav_footer{
+
+.nav_footer {
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
-/* .footer_container span,
-.nav_footer a{
-    font-family: "Hanken Grotesk", sans-serif;
-    font-weight: 500;
-} */
 
-.nav_footer a{
+.nav_footer a {
     color: #3e2a1f;
-    font-size:16px ;
+    font-size: 16px;
     text-decoration: none;
-    font-family: 'Inter', system-ui, sans-serif;
 }
 
-@media screen and (max-width: 768px){
-    .home_container{
-       display: block;
-       width: 768px;
-       max-width: 100%;
-       margin: 0 auto;
+
+
+/* --- MÉDIAS (até 768px) --- */
+@media (max-width: 768px) {
+    .home_container {
+        height: auto;
+        padding: 15px 0;
+        flex-direction: column; /* Empilha a logo em cima e o menu embaixo */
+        gap: 15px;
     }
 
-    .container_home a{
-       display: none;
+    .nav_cabecalho {
+        gap: 20px;
     }
 
-    .container, 
+    h1.titulo {
+        font-size: 48px; /* Diminui o título para não quebrar feio */
+    }
+
     .subtitulo,
-    .texto,
-    .linha{
+    .texto {
         font-size: 18px;
     }
-
-    .container button{
-       font-size: 20px;
-       width: 460px;
-       height: 33px;
-    } 
-    
-    .linha1 input{
-       width: 437px;
-       height: 33px;
-    }
-
-    .linha3 input{
-       width: 438px;
-       height: 33px;
-    }
-
-    .button1{
-       width: 460px;
-       height: 38px;
-       margin-bottom: 20px;
-    }
-    h1{
-    font-size: 60px;
 }
+
+/* --- CELULARES (até 480px) --- */
+@media (max-width: 480px) {
+    .home_container img {
+        width: 80px; /* Logo um pouco menor no celular */
+    }
+
+    .nav_cabecalho {
+        flex-wrap: wrap; /* Permite que os links quebrem de linha se não couberem */
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav_cabecalho a {
+        font-size: 14px;
+    }
+
+    .signup-form {
+        padding: 15px;
+    }
+
+    h1.titulo {
+        font-size: 36px;
+    }
+
+    .subtitulo,
+    .texto,
+    .linha {
+        font-size: 16px;
+    }
+
+    .btn-google,
+    .button1 {
+        font-size: 16px;
+        height: 44px; /* Altura maior facilita o toque com o dedo */
+    }
+
+    /* Caso use o footer no futuro, ele também já fica responsivo */
+    .footer_container {
+        height: auto;
+        padding: 20px 0;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav_footer {
+        gap: 10px;
+    }
 }

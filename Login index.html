@@ -13,51 +13,54 @@
 </head>
 
 <body>
-    <header class="home_cabeçalho">
+     <header class="home_cabecalho">
         <div class="home_container container_home">
-            <img src="./img/Logo 2.png" alt="">
-            <nav class="nav_cabeçalho">
-                <a href="">nossos cafés</a>
-                <a href="">fazer login</a>
-                <a href="">recomendações</a>
+            <img src="./img/Logo 2.png" alt="Logo da cafeteria">
+            <nav class="nav_cabecalho">
+                <a href="#">nossos cafés</a>
+                <a href="#">fazer login</a>
+                <a href="#">recomendações</a>
             </nav>
         </div>
     </header>
-    <form class="signup-form">
-        <section class="container">
-            <span class="subtitulo">sua jornada começa aqui</span>
-            <hr>
-            <h1 class="titulo">crie sua conta</h1>
-            <span class="texto">leva menos de um minuto. O café a gente prepara depois.</span>
 
-            <button>
-                continuar com Google
-            </button>
-            <span class="linha">ou use seu e-mail</span>
-        </section>
-        <section class="login">
-            <div class="input-group linha1">
-                <label for="name">NOME COMPLETO</label>
-                <input type="text" id="name" placeholder="Como podemos te chamar?">
-            </div>
+    <main>
+        <form class="signup-form" action="#" method="POST">
+            <section class="container">
+                <span class="subtitulo">sua jornada começa aqui</span>
+                <hr>
+                <h1 class="titulo">crie sua conta</h1>
+                <p class="texto">leva menos de um minuto. O café a gente prepara depois.</p>
 
-            <div class="input-group linha1">
-                <label for="email">E-MAIL</label>
-                <input type="email" id="email" placeholder="voce@exemplo.com">
-            </div>
-            <div class="input-group">
-                <label for="password">CRIE UMA SENHA</label>
-                <div class="linha3">
-                    <input type="password" id="password" placeholder="No mínimo 6 caracteres">
-                    <button type="button">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
-                        </svg>
-                    </button>
+                <button type="button" class="btn-google">
+                    continuar com Google
+                </button>
+                <span class="linha">ou use seu e-mail</span>
+            </section>
+
+            <section class="login">
+                <div class="input-group linha1">
+                    <label for="name">NOME COMPLETO</label>
+                    <input type="text" id="name" name="name" placeholder="Como podemos te chamar?" required>
                 </div>
-            </div>
+
+                <div class="input-group linha1">
+                    <label for="email">E-MAIL</label>
+                    <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">CRIE UMA SENHA</label>
+                    <div class="linha3">
+                        <input type="password" id="password" name="password" placeholder="No mínimo 6 caracteres" minlength="6" required>
+                        <button type="button" aria-label="Mostrar senha">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             <div class="container_login linha2">
                 <button class="button1">
                     Crie sua conta aqui
@@ -66,10 +69,10 @@
         </section>
     </form>
     <footer>
-        <div class="footer_container">
+        <div class=" footer_container">
             <img src="./img/Logo 2.png" alt="">
+            <span>© 2026 Bolos do Jacquin. A excelência da patisserie francesa.</span>
             <nav class="nav_footer">
-                <a href=""></a>
                 <a href="">facebook</a>
                 <a href="">Intagran</a>
             </nav>
