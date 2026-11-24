@@ -128,7 +128,7 @@ h1.titulo {
 /* Campo de senha + botão do olho alinhados perfeitamente */
 .linha3 {
     display: flex;
-    width: 102%;
+    width: 100%;
 }
 
 .linha3 input {
@@ -158,7 +158,7 @@ h1.titulo {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 99%;
 }
 
 .button1 {
@@ -243,7 +243,7 @@ footer {
     }
 
     .nav_cabecalho {
-        flex-wrap: wrap; /* Permite que os links quebrem de linha se não couberem */
+        flex-wrap: wrap; 
         justify-content: center;
         gap: 15px;
     }
